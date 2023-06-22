@@ -241,21 +241,9 @@ body {
 
 
 @media screen and (max-width: 375px) {
-  body {
-    padding: 0px;
-    margin: 0px;
-  }
   .panel-container {
     grid-template-columns: 1fr;
     height: auto;
     width: 100%;
-  }
-
-  .panel-left {
-    margin-right: 0;
-  }
-
-  .panel-right {
-    margin-left: 0;
   }
 }
