@@ -51,27 +51,24 @@ p, h1, h2, h3, h4, h5, h6 {
 
 body{
   padding: 20px;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Epilogue', sans-serif;
 }
 .container{
   max-height: 100vh;
-  width: 90%;
-  margin: 0 auto;
 } 
 
 .navbar {
   padding-bottom: 20px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 .logo-container {
-  margin-right: 20px; /* Adjust the margin as needed */
+  margin-right: 20px; 
 }
 
 .logo {
-  height: 50px; /* Adjust the height of the logo image */
+  height: 50px;
 }
 
 .navbar ul {
@@ -82,9 +79,28 @@ body{
 
 .navbar li {
   display: inline;
-  margin-left: 20px;
+  margin-left: 40px;
   font-size: 14px;
   
+}
+
+.buttons{
+  margin-left: auto;
+}
+
+.login-button{
+  border: none;
+  background-color: white;
+  color: hsl(236, 13%, 42%);
+  padding-right: 10px;
+}
+
+.register-button{
+  background-color: white;
+  border-radius: 10px;
+  color: hsl(236, 13%, 42%);
+  border-width: 1.5px;
+  margin-left: 20px;
 }
 
 .navbar a {
@@ -94,119 +110,82 @@ body{
 
 .outer-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto auto auto;
+  grid-template-columns: 1fr 1fr ;
+  grid-template-rows: auto auto auto auto;
   gap: 10px;
+  max-width: 70%;
   max-height: 70vh;
+  margin: 0 auto;
 }
 
 .grid-item-1 {
-  grid-column: 1 / span 2;
-  grid-row: 1 / span 1;
-  height: fit-content;
+  display: flex;
+  padding-top:70px;
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
   color: hsl(240, 100%, 5%);
+  font-size:25px;
+  line-height: 1;
 }
 
-.grid-item-1 img{
-  width: 100%;
-  height: 200px;
-  
-}
+
 
 .grid-item-2 {
+  display: flex;
   grid-column: 1 / span 1;
   grid-row: 2 / span 1;
-  font-size: 30px;
+  font-size: 9px;
   line-height: 1;
-  margin-bottom: 20px;
+  color:hsl(0,0%,41%)
 }
 
 
 
 .grid-item-3 {
-  grid-column: 2 / span 1;
-  grid-row: 2 / span 1;
+  grid-column: 1 / span 1;
+  grid-row: 3 / span 1;
   font-size:12px;
   margin-bottom: 20px;
-}
-
-.grid-item-3 p{
-  color:hsl(236, 13%, 42%)
+  
 }
 
 .grid-item-3 button{
-  background-color: rgb(242,93,83);
+  background-color: black;
   border: none;
+  border-radius: 10px;
   margin-top: 20px;
-  padding: 10px 15px 10px 15px;
-  width: 50%;
+  padding: 10px 20px 10px 20px;
   color:white;
-  letter-spacing: 2px;
 }
 .grid-item-4 {
-  grid-column: 3 / span 1;
-  grid-row: 1 / span 2;
-  background-color: hsl(240, 100%, 5%);
-  color: white;
-  padding: 20px 40px 0px 40px;
-  font-size: 12px;
-  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  grid-column: 1 / span 1;
+  grid-row: 4 / span 1;
+  align-self: flex-end;
 }
 
-.grid-item-4 h1{
-  color: hsl(35,59%,62%);
+.grid-item-4 svg{
+  transform: scale(0.6);
+  transform-origin: top left;
+  padding: 0px;
 }
 
-.grid-item-4 h3{
-  padding-top: 20px;
-}
-
-.grid-item-4 p{
-  padding-bottom: 20px;
+.grid-item-4:last-child{
+  margin-right: 0px;
 }
 
 .grid-item-5 {
-  grid-column: 1 / span 1;
-  grid-row: 3 / span 1;
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 4;
   display: flex;
   align-items: center;
   font-size: 12px;
   color: hsl(240, 100%, 5%);;
 }
 
-.grid-item-6 {
-  grid-column: 2 / span 1;
-  grid-row: 3 / span 1;
-  display: flex;
-  align-items: center;
-  font-size: 12px;
-  color: hsl(240, 100%, 5%);
-}
-
-.grid-item-7 {
-  grid-column: 3 / span 1;
-  grid-row: 3 / span 1;
-  display: flex;
-  align-items: center;
-  font-size: 12px;
-  color: hsl(240, 100%, 5%);
-}
-
-.image {
-  width: 130px; /* Adjust the width as needed */
-  height: 100px; /* Ensures the image maintains its aspect ratio */
-  margin-right: 20px; /* Add spacing between the image and text */
-}
-
-.text-wrapper {
-  display: flex;
-  flex-direction: column;
-}
-
-.foot-header{
-  color: hsl(233, 8%, 79%)
-}
-
-.small-header{
-  color:hsl(236, 13%, 42%)
+.image{
+  max-width: 100%;
+  max-height: 450px;
+  margin-left:40px;
 }
